@@ -6,6 +6,7 @@ target 'GithubUsers' do
   use_frameworks!
 
   # Pods for GithubUsers
+  pod 'SkeletonView'
 
   target 'GithubUsersTests' do
     inherit! :search_paths

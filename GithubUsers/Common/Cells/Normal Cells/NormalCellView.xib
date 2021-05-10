@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NormalCellView" id="KGk-i7-Jjw" customClass="NormalCellView" customModule="GithubUsers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-BB-d3x">
+                        <rect key="frame" x="12" y="12.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="8kI-sh-Zv3"/>
+                            <constraint firstAttribute="height" constant="50" id="jQE-Eq-ofl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-K2-VpV">
+                        <rect key="frame" x="70" y="11" width="225" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XBi-pU-SUd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm4-BP-CeP">
+                        <rect key="frame" x="70" y="27.5" width="225" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="uE9-zQ-P21"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zPb-K2-VpV" secondAttribute="trailing" constant="25" id="1Pd-Ot-VEZ"/>
+                    <constraint firstItem="Hm4-BP-CeP" firstAttribute="leading" secondItem="zPb-K2-VpV" secondAttribute="leading" id="1vJ-0q-Ycm"/>
+                    <constraint firstItem="cgS-BB-d3x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DHk-qt-8Lb"/>
+                    <constraint firstAttribute="trailing" secondItem="Hm4-BP-CeP" secondAttribute="trailing" constant="25" id="Dn8-rO-Axp"/>
+                    <constraint firstItem="zPb-K2-VpV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Il1-gT-ykK"/>
+                    <constraint firstItem="cgS-BB-d3x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OHq-EP-bwx"/>
+                    <constraint firstItem="zPb-K2-VpV" firstAttribute="leading" secondItem="cgS-BB-d3x" secondAttribute="trailing" constant="8" symbolic="YES" id="QaE-bg-VCK"/>
+                    <constraint firstItem="Hm4-BP-CeP" firstAttribute="centerY" secondItem="cgS-BB-d3x" secondAttribute="centerY" id="p2e-b8-9Zu"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="normalAvatarImage" destination="cgS-BB-d3x" id="v4U-8E-3rg"/>
+                <outlet property="normalDetailsLabel" destination="Hm4-BP-CeP" id="pBl-Tb-x2T"/>
+                <outlet property="normalNameLabel" destination="zPb-K2-VpV" id="wdO-Og-xeH"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
