@@ -68,4 +68,11 @@ extension User {
     }
 }
 
+enum CellType {
+    case inverted
+    case normal
+    case note
+    case border
+}
+
 

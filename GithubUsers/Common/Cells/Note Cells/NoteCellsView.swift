@@ -13,7 +13,8 @@ class NoteCellsView: UITableViewCell {
     @IBOutlet weak var noteAvatarImageView: UIImageView!
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var noteDetailsLabel: UILabel!
-
+    @IBOutlet weak var noteImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,10 +23,37 @@ class NoteCellsView: UITableViewCell {
         noteAvatarImageView.layer.cornerRadius = 25
     }
 
-    func configure(with model: User) {
-        self.noteNameLabel.text = model.login
-        self.noteDetailsLabel.text = model.type
-        self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
+    func configure(with model: User, cellType: CellType) {
+        
+        switch cellType {
+        case .normal:
+            self.noteNameLabel.text = model.login
+            self.noteDetailsLabel.text = model.type
+            self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
+            self.noteImageView.isHidden = true
+        case.inverted:
+            self.noteNameLabel.text = model.login
+            self.noteDetailsLabel.text = model.type
+            self.noteImageView.isHidden = true
+            
+            let image = UIImage()
+            let avatarImage = image.loadImageFromURL(withUrl: URL(string: model.avatar_url)!)
+            let rotatedImage = avatarImage.rotate(radians: .pi)
+            self.noteAvatarImageView.image = rotatedImage
+        case .note:
+            self.noteNameLabel.text = model.login
+            self.noteDetailsLabel.text = model.type
+            self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
+        case .border:
+            self.contentView.layer.borderWidth = 2
+            
+            self.noteNameLabel.text = model.login
+            self.noteDetailsLabel.text = model.type
+            self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
+            self.noteImageView.isHidden = true
+        default:
+            break
+        }
     }
     
 }

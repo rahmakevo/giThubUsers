@@ -7,6 +7,7 @@ target 'GithubUsers' do
 
   # Pods for GithubUsers
   pod 'SkeletonView'
+  pod 'ReachabilitySwift'
 
   target 'GithubUsersTests' do
     inherit! :search_paths

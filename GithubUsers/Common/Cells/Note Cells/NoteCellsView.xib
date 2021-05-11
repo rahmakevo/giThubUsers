@@ -67,6 +67,7 @@
             <connections>
                 <outlet property="noteAvatarImageView" destination="DwQ-u6-19B" id="iWq-2B-75K"/>
                 <outlet property="noteDetailsLabel" destination="nPt-T2-Jd8" id="eid-3Y-rhU"/>
+                <outlet property="noteImageView" destination="Xpn-aG-kUQ" id="BX7-BJ-gGC"/>
                 <outlet property="noteNameLabel" destination="U18-9O-BrG" id="L5s-cw-Xec"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="111.49553571428571"/>
