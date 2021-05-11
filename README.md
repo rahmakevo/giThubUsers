@@ -1,8 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![giThubUsers]]
-
 This project is a sample project that makes network calls to fetch Github users and view the user's profile. This is an Xcode Project and runs on Swift 5. Feel free to download and run the App.
 
 ### Built With
