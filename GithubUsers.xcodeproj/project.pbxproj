@@ -21,12 +21,8 @@
 		4334619C264694050085FDA3 /* EndpointPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334619B264694050085FDA3 /* EndpointPlugin.swift */; };
 		433461A4264696D00085FDA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461A3264696D00085FDA3 /* User.swift */; };
 		433461A7264698A40085FDA3 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461A6264698A40085FDA3 /* UserRepository.swift */; };
-		433461AD26491B970085FDA3 /* NormalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461AB26491B970085FDA3 /* NormalCellView.swift */; };
-		433461AE26491B970085FDA3 /* NormalCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433461AC26491B970085FDA3 /* NormalCellView.xib */; };
 		433461B226491FE10085FDA3 /* NoteCellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461B026491FE10085FDA3 /* NoteCellsView.swift */; };
 		433461B326491FE10085FDA3 /* NoteCellsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433461B126491FE10085FDA3 /* NoteCellsView.xib */; };
-		433461B72649233B0085FDA3 /* InvertedcellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461B52649233B0085FDA3 /* InvertedcellsView.swift */; };
-		433461B82649233B0085FDA3 /* InvertedcellsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433461B62649233B0085FDA3 /* InvertedcellsView.xib */; };
 		433461BB264941DD0085FDA3 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461BA264941DD0085FDA3 /* Array.swift */; };
 		433461BD26495BEE0085FDA3 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461BC26495BEE0085FDA3 /* ImageView.swift */; };
 		433461C02649A9BA0085FDA3 /* CustomElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433461BF2649A9BA0085FDA3 /* CustomElementType.swift */; };
@@ -77,12 +73,8 @@
 		4334619B264694050085FDA3 /* EndpointPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointPlugin.swift; sourceTree = "<group>"; };
 		433461A3264696D00085FDA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		433461A6264698A40085FDA3 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		433461AB26491B970085FDA3 /* NormalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCellView.swift; sourceTree = "<group>"; };
-		433461AC26491B970085FDA3 /* NormalCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalCellView.xib; sourceTree = "<group>"; };
 		433461B026491FE10085FDA3 /* NoteCellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellsView.swift; sourceTree = "<group>"; };
 		433461B126491FE10085FDA3 /* NoteCellsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCellsView.xib; sourceTree = "<group>"; };
-		433461B52649233B0085FDA3 /* InvertedcellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedcellsView.swift; sourceTree = "<group>"; };
-		433461B62649233B0085FDA3 /* InvertedcellsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvertedcellsView.xib; sourceTree = "<group>"; };
 		433461BA264941DD0085FDA3 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		433461BC26495BEE0085FDA3 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		433461BF2649A9BA0085FDA3 /* CustomElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomElementType.swift; sourceTree = "<group>"; };
@@ -272,20 +264,9 @@
 		433461A926491B530085FDA3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				433461B42649231B0085FDA3 /* Inverted Cells */,
 				433461AF26491E550085FDA3 /* Note Cells */,
-				433461AA26491B760085FDA3 /* Normal Cells */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		433461AA26491B760085FDA3 /* Normal Cells */ = {
-			isa = PBXGroup;
-			children = (
-				433461AB26491B970085FDA3 /* NormalCellView.swift */,
-				433461AC26491B970085FDA3 /* NormalCellView.xib */,
-			);
-			path = "Normal Cells";
 			sourceTree = "<group>";
 		};
 		433461AF26491E550085FDA3 /* Note Cells */ = {
@@ -295,15 +276,6 @@
 				433461B126491FE10085FDA3 /* NoteCellsView.xib */,
 			);
 			path = "Note Cells";
-			sourceTree = "<group>";
-		};
-		433461B42649231B0085FDA3 /* Inverted Cells */ = {
-			isa = PBXGroup;
-			children = (
-				433461B52649233B0085FDA3 /* InvertedcellsView.swift */,
-				433461B62649233B0085FDA3 /* InvertedcellsView.xib */,
-			);
-			path = "Inverted Cells";
 			sourceTree = "<group>";
 		};
 		433461B9264941C80085FDA3 /* Extension */ = {
@@ -468,11 +440,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4334616A2645A5360085FDA3 /* LaunchScreen.storyboard in Resources */,
-				433461B82649233B0085FDA3 /* InvertedcellsView.xib in Resources */,
 				433461672645A5360085FDA3 /* Assets.xcassets in Resources */,
 				433461B326491FE10085FDA3 /* NoteCellsView.xib in Resources */,
 				433461622645A5330085FDA3 /* Main.storyboard in Resources */,
-				433461AE26491B970085FDA3 /* NormalCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,9 +579,7 @@
 				433461B226491FE10085FDA3 /* NoteCellsView.swift in Sources */,
 				4334615D2645A5330085FDA3 /* SceneDelegate.swift in Sources */,
 				433461CC2649EC2D0085FDA3 /* UIView + Extension.swift in Sources */,
-				433461AD26491B970085FDA3 /* NormalCellView.swift in Sources */,
 				433461BB264941DD0085FDA3 /* Array.swift in Sources */,
-				433461B72649233B0085FDA3 /* InvertedcellsView.swift in Sources */,
 				433461C42649B2860085FDA3 /* DetailsViewController.swift in Sources */,
 				43346197264691A80085FDA3 /* NetworkClientProtocol.swift in Sources */,
 				433461BD26495BEE0085FDA3 /* ImageView.swift in Sources */,
