@@ -24,7 +24,7 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   sudo gem install cocoapods
   
-  <!-- CONTACT -->
+<!-- CONTACT -->
 ## Contact
 
 Your Name - [@linkedIn](https://www.linkedin.com/in/kevin-siundu-506b2a162/) - email@example.com
