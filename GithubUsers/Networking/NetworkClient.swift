@@ -32,9 +32,10 @@ final class NetworkClient: NetworkClientProtocol {
     
     func searchUsers(completion: @escaping (Result<[User], Error>) -> Void) {
         let endpoint = EndpointPlugin.users
-        // create urlRequest from custom function
-        let urlRequest = URLRequest(url: endpoint.url)
-        URLSession.shared.dataTask(with: URL(string: "https://api.github.com/users?since=0")!) { data, response, error in
+        // create urlRequest from custom function        
+        let url = URL(string: "https://api.github.com/users?since=0")!
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
                    // check for error in session and confirm presence of data
                    guard let data = data, error == nil else {
                     completion(.failure(error!))

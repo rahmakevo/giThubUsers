@@ -48,4 +48,8 @@ extension EndpointPlugin {
     static var userProfile: Self {
         return EndpointPlugin(path: "users/tawk")
     }
+    
+    static var baseURL: Self {
+        return EndpointPlugin(path: "")
+    }
 }
