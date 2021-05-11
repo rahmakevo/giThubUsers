@@ -19,10 +19,6 @@ class NetworkingClientTests: XCTestCase {
         XCTAssertEqual(endpointUsers.url, URL(string: "https://api.github.com/users%3Fsince=0?"))
     }
     
-    func testSearchUsersEndPoint(path: String) {
-        XCTAssertEqual(endpointSearchUser.url, URL(string: "https://api.github.com/users/\(path)"))
-    }
-    
     func testBaseURL() {
         XCTAssertEqual(baseURL.url, URL(string: "https://api.github.com/?"))
     }
