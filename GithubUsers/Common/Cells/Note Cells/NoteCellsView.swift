@@ -45,12 +45,19 @@ class NoteCellsView: UITableViewCell {
             self.noteDetailsLabel.text = model.type
             self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
         case .border:
-            self.contentView.layer.borderWidth = 2
-            
             self.noteNameLabel.text = model.login
+            self.noteNameLabel.font = UIFont.systemFont(ofSize: 13)
+            
             self.noteDetailsLabel.text = model.type
-            self.noteAvatarImageView.loadImageViewFromURL(withUrl: URL(string: model.avatar_url)!)
+            self.noteDetailsLabel.font = UIFont.boldSystemFont(ofSize: 17)
+            self.noteDetailsLabel.textColor = UIColor.darkText
+            
             self.noteImageView.isHidden = true
+            
+            let image = UIImage()
+            let avatarImage = image.loadImageFromURL(withUrl: URL(string: model.avatar_url)!)
+            let rotatedImage = avatarImage.rotate(radians: .pi)
+            self.noteAvatarImageView.image = rotatedImage
         default:
             break
         }

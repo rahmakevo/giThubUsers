@@ -225,6 +225,11 @@ extension ViewController: SkeletonTableViewDataSource,UITableViewDelegate, UISea
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCellsView", for: indexPath) as! NoteCellsView
+        
+        // loop through array for every first element make the cellType.normal
+        // for every second element in array make cellType.note
+        // for every third element in arrray make cellType.inverted
+        // for every fourth element invert the image & colors and follow the pattern until array is exhausted
         switch indexPath.row % 4 {
         case 0:
             self.state.cellType = CellType.normal

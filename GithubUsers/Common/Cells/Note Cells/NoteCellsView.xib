@@ -22,6 +22,9 @@
                             <constraint firstAttribute="height" constant="50" id="C7A-N8-ife"/>
                             <constraint firstAttribute="width" constant="50" id="zzQ-k6-csb"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U18-9O-BrG">
                         <rect key="frame" x="74" y="12.5" width="221" height="20"/>
@@ -31,6 +34,9 @@
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-T2-Jd8">
                         <rect key="frame" x="74" y="27.5" width="221" height="20"/>
@@ -40,6 +46,9 @@
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.fill.on.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xpn-aG-kUQ">
                         <rect key="frame" x="283" y="25" width="25" height="25"/>
@@ -48,6 +57,9 @@
                             <constraint firstAttribute="height" constant="25" id="31L-n2-4ef"/>
                             <constraint firstAttribute="width" constant="25" id="qhh-yZ-ngQ"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -62,8 +74,17 @@
                     <constraint firstItem="nPt-T2-Jd8" firstAttribute="leading" secondItem="DwQ-u6-19B" secondAttribute="trailing" constant="12" id="uct-zc-B1E"/>
                     <constraint firstItem="Xpn-aG-kUQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wzt-U1-qOg"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="noteAvatarImageView" destination="DwQ-u6-19B" id="iWq-2B-75K"/>
                 <outlet property="noteDetailsLabel" destination="nPt-T2-Jd8" id="eid-3Y-rhU"/>
