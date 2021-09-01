@@ -25,6 +25,6 @@ This is an example of how to list things you need to use the software and how to
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@linkedIn](https://www.linkedin.com/in/kevin-siundu-506b2a162/) - email@example.com
+Kevin Siundu - [@linkedIn](https://www.linkedin.com/in/kevin-siundu-506b2a162/) - siundu344@gmail.com
 
 Project Link: [https://github.com/rahmakevo/giThubUsers](https://github.com/rahmakevo/giThubUsers)
